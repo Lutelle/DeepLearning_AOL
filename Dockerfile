@@ -1,5 +1,5 @@
 # Dockerfile (GPU)
-FROM pytorch/pytorch:2.2.0-cuda11.8-cudnn8-runtime
+FROM nvidia/cuda:12.4.1-runtime-ubuntu22.04
 
 WORKDIR /app
 
