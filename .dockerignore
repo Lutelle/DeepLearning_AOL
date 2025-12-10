@@ -1,0 +1,13 @@
+# Exclude large data and model checkpoint directories
+data/
+checkpoints/
+samples/
+
+# Also exclude Git metadata, environments, and general clutter
+.git
+.gitignore
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
