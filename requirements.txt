@@ -152,13 +152,9 @@ threadpoolctl==3.6.0
 tinycss2==1.4.0
 toml==0.10.2
 tomli==2.3.0
-torch @ file:///mnt/c/Users/PC/Downloads/torch-2.9.1%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl#sha256=c8d670aa0be6fbecd2b0e7b7d514a104dbdefcc3786ca446cf0c3415043ea40a
-torchaudio @ file:///mnt/c/Users/PC/Downloads/torchaudio-2.9.1%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl#sha256=62b16424af63c0e12bea6efe3889be358b02047a96119982673f07f12b739888
-torchvision @ file:///mnt/c/Users/PC/Downloads/torchvision-0.24.1%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl#sha256=87f6e32d2d98d2779f9fa58aa93cf6af049e3f87681344a2088e2fc7d9dd3e00
 tornado==6.5.2
 tqdm==4.67.1
 traitlets==5.14.3
-triton @ file:///mnt/c/Users/PC/Downloads/triton-3.5.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl#sha256=5fc53d849f879911ea13f4a877243afc513187bc7ee92d1f2c0f1ba3169e3c94
 typing_extensions==4.15.0
 tzdata==2025.2
 uri-template==1.3.0
