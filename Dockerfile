@@ -4,6 +4,7 @@ FROM nvidia/cuda:12.4.1-runtime-ubuntu22.04
 WORKDIR /app
 
 COPY whls/ /app/whls/
+RUN pip install /app/whls/*.whl
 
 # copy files
 COPY requirements.txt /app/
