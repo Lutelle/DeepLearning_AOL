@@ -2,6 +2,7 @@
 data/
 checkpoints/
 samples/
+/whls
 
 # Also exclude Git metadata, environments, and general clutter
 .git

@@ -4,6 +4,8 @@ data/
 checkpoints/
 # Ignore sample output files
 samples/
+# Ignore whl files
+/whls
 
 
 
