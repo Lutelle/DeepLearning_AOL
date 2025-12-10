@@ -1,0 +1,23 @@
+# Dockerfile (GPU)
+FROM pytorch/pytorch:2.2.0-cuda11.8-cudnn8-runtime
+
+WORKDIR /app
+
+# copy files
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . /app
+
+# Create checkpoints dir
+RUN mkdir -p /app/checkpoints /app/samples
+
+# Expose streamlit port
+EXPOSE 8501
+
+# Streamlit config to run in server mode
+ENV STREAMLIT_SERVER_ENABLECORS=false
+ENV STREAMLIT_SERVER_HEADLESS=true
+ENV STREAMLIT_SERVER_PORT=8501
+
+CMD ["streamlit", "run", "app_streamlit.py", "--server.port=8501", "--server.address=0.0.0.0"]

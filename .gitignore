@@ -1,0 +1,28 @@
+# Ignore the directory containing training data
+data/
+# Ignore the directory containing model checkpoints
+checkpoints/
+# Ignore sample output files
+samples/
+
+
+
+# --- Common files for Python/Jupyter/PyTorch projects (Recommended) ---
+
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor/IDE specific files
+.vscode/    # Visual Studio Code
+.idea/      # PyCharm/IntelliJ
+*.swp       # Vim swap files
+
+# Operating System files
+.DS_Store
+Thumbs.db

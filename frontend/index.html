@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>Image Gen UI</title></head>
+  <body>
+    <h3>Image Generation (FastAPI)</h3>
+    <textarea id="prompt" rows="3" cols="50">A cat wearing a spacesuit</textarea><br>
+    <input id="n" type="number" value="1" min="1" max="8"/>
+    <button id="go">Generate</button>
+    <div id="out"></div>
+    <script>
+      document.getElementById('go').onclick=async()=>{
+        const prompt=document.getElementById('prompt').value;
+        const n=Number(document.getElementById('n').value);
+        const res=await fetch('/generate',{
+          method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({prompt,n_samples:n})
+        });
+        const data=await res.json();
+        const out=document.getElementById('out'); out.innerHTML='';
+        data.images_base64.forEach(b64=>{
+          const img=new Image();
+          img.src='data:image/png;base64,'+b64;
+          img.style.maxWidth='300px';
+          out.appendChild(img);
+        });
+      }
+    </script>
+  </body>
+</html>
